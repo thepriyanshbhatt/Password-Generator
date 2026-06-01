@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { Shield, Lock } from 'lucide-react';
 
 const HeroLeft: React.FC = () => {
   return (
@@ -26,10 +26,26 @@ const HeroLeft: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-16 md:mt-[100px] flex flex-col gap-1.5 text-[15px] text-text-secondary">
-            <div className="text-amber-500 tracking-widest text-[16px] drop-shadow-sm">★★★★★</div>
-            <div className="font-medium tracking-tight text-text-primary">2,000+ reviews</div>
-            <div className="opacity-80 tracking-tight">Trusted by 750,000+ users</div>
+          <div className="mt-16 md:mt-[100px] flex flex-col sm:flex-row gap-8">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-text-primary/5 dark:bg-text-primary/10 flex items-center justify-center text-text-primary">
+                <Shield size={22} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[15px] font-bold text-text-primary tracking-tight">Zero-Knowledge</span>
+                <span className="text-[14px] font-medium text-text-secondary">Generated locally.</span>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-text-primary/5 dark:bg-text-primary/10 flex items-center justify-center text-text-primary">
+                <Lock size={22} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[15px] font-bold text-text-primary tracking-tight">Crypto API</span>
+                <span className="text-[14px] font-medium text-text-secondary">Mathematical security.</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
