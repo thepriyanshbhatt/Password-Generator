@@ -20,11 +20,6 @@ const HeroLeft: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <button className="bg-btn-bg text-btn-text px-10 py-5 rounded-full font-bold text-[18px] hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_8px_20px_rgba(0,0,0,0.12)] dark:shadow-[0_8px_20px_rgba(255,255,255,0.08)] flex items-center gap-3 group">
-              Generate Password
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
-            </button>
-            
             <div className="flex items-center gap-3 text-text-secondary">
               <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></div>
               <span className="text-[15px] font-semibold">100% Free & Secure</span>
