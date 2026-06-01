@@ -4,6 +4,7 @@ import HeroLeft from './components/HeroLeft';
 import HeroRight from './components/HeroRight';
 
 import Features from './components/Features';
+import Footer from './components/Footer';
 
 import { motion } from 'framer-motion';
 
@@ -21,6 +22,7 @@ function App() {
         <HeroRight />
       </main>
       <Features />
+      <Footer />
     </motion.div>
   );
 }
