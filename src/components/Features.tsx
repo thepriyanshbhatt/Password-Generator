@@ -26,17 +26,17 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-24 px-8 bg-[#0A0A0A] transition-colors duration-500 relative z-10 overflow-hidden">
+    <section className="w-full py-24 px-8 bg-white dark:bg-[#0A0A0A] transition-colors duration-500 relative z-10 overflow-hidden">
       {/* Creative Merging Glowing Border */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-green-slider to-transparent opacity-80"></div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-green-slider rounded-full blur-[140px] opacity-20 pointer-events-none -mt-[150px]"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-green-slider rounded-full blur-[140px] opacity-10 dark:opacity-20 pointer-events-none -mt-[150px]"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-[40px] font-bold text-white tracking-tighter mb-4">
+          <h2 className="text-[40px] font-bold text-zinc-900 dark:text-white tracking-tighter mb-4">
             Everything you need. <span className="text-zinc-500">Nothing you don't.</span>
           </h2>
-          <p className="text-[18px] text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-[18px] text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
             MyPass is built with privacy and simplicity as the core principles. 
             Experience the most secure way to manage your digital life.
           </p>
@@ -46,15 +46,15 @@ const Features: React.FC = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="p-8 rounded-[24px] bg-[#141414] border border-white/5 hover:border-brand-green-slider/30 hover:-translate-y-1 transition-all duration-300 shadow-2xl"
+              className="p-8 rounded-[24px] bg-zinc-50 dark:bg-[#141414] border border-zinc-200 dark:border-white/5 hover:border-brand-green-slider/50 hover:shadow-[0_8px_30px_rgba(126,217,87,0.15)] dark:hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-2xl"
             >
-              <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 border border-white/10 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-white dark:bg-white/5 flex items-center justify-center mb-6 border border-zinc-200 dark:border-white/10 shadow-sm">
                 {feature.icon}
               </div>
-              <h3 className="text-[18px] font-bold text-white mb-3 tracking-tight">
+              <h3 className="text-[18px] font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
                 {feature.title}
               </h3>
-              <p className="text-[15px] text-zinc-400 leading-relaxed">
+              <p className="text-[15px] text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 {feature.description}
               </p>
             </div>
