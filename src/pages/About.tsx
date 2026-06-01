@@ -53,19 +53,21 @@ const About: React.FC = () => {
             </h1>
 
             <p className="text-[18px] md:text-[20px] text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed mb-10 max-w-lg">
-              I am a passionate software engineer and the creator of Vaultr. My expertise lies in building dynamic, highly-optimized web applications that solve complex problems with elegant, minimalist design.
+              I am a passionate software engineer and the creator of IntelliKey. My expertise lies in building dynamic, highly-optimized web applications that solve complex problems with elegant, minimalist design.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a 
-                href="#" 
+                href="https://priyansh.framer.ai" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-brand-green-slider hover:bg-brand-green-accent text-black font-bold text-[16px] transition-colors shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 View Portfolio
                 <ExternalLink size={18} />
               </a>
               <a 
-                href="#" 
+                href="mailto:priyanshbhatt.dev@gmail.com" 
                 className="flex items-center justify-center px-8 py-4 rounded-full bg-transparent border-2 border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white font-bold text-[16px] hover:border-brand-green-slider dark:hover:border-brand-green-slider hover:bg-brand-green-slider/5 transition-all"
               >
                 Get in Touch
