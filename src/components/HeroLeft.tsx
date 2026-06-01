@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroLeft: React.FC = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center bg-brand-light p-8 md:p-[80px] relative overflow-hidden transition-colors duration-500">
+    <div className="w-full h-full flex flex-col justify-center p-8 md:p-[80px] relative z-10 transition-colors duration-500">
       {/* Decorative Dash */}
       <div className="absolute top-12 left-8 md:top-24 md:left-[80px] w-10 h-1 bg-text-primary rounded-full opacity-80"></div>
 
