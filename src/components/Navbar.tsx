@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isDark, setIsDark] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     // Check initial system preference or saved preference
@@ -22,6 +25,16 @@ const Navbar: React.FC = () => {
   };
 
   const scrollToFeatures = () => {
+    if (location.pathname !== '/') {
+      navigate('/#features');
+      // Adding a small timeout to let the page render before scrolling
+      setTimeout(() => {
+        const target = document.getElementById('features');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return;
+    }
+
     const target = document.getElementById('features');
     if (!target) return;
     const targetPosition = target.getBoundingClientRect().top + window.scrollY;
@@ -54,19 +67,19 @@ const Navbar: React.FC = () => {
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
       <nav className="h-[72px] max-w-4xl w-full bg-white/70 dark:bg-[#1A1A1A]/80 backdrop-blur-2xl border border-white/50 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-all duration-500 relative">
         <div className="flex-1 flex items-center justify-start">
-        <a href="/" className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight leading-none">
+        <Link to="/" className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight leading-none">
           <img src="/vaultr-logo.png" alt="Vaultr Logo" className="w-[32px] h-[32px] object-contain drop-shadow-sm" />
           Vaultr
-        </a>
+        </Link>
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
         <button onClick={scrollToFeatures} className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors">
           Features
         </button>
-        <a href="/about" className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
+        <Link to="/about" className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
           About
-        </a>
+        </Link>
       </div>
 
       <div className="flex-1 flex items-center justify-end gap-6">
