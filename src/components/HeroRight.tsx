@@ -17,7 +17,7 @@ const HeroRight: React.FC = () => {
       <div className="relative w-full max-w-[600px] h-[500px] flex items-center justify-center">
         
         {/* Main Password Card */}
-        <div className="relative z-10 w-[420px] h-[290px] bg-card-bg backdrop-blur-2xl border border-card-border rounded-[32px] p-7 flex flex-col justify-between shadow-[0_20px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-500">
+        <div className="relative z-10 w-[420px] h-[290px] bg-card-bg border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
           {/* Header */}
           <div className="flex justify-between items-center">
             <h2 className="font-bold text-[28px] text-text-primary tracking-tight">Google</h2>
@@ -45,11 +45,11 @@ const HeroRight: React.FC = () => {
         </div>
 
         {/* Floating Login Widget (Top Right) */}
-        <div className="absolute top-[30px] right-[-10px] md:right-[10px] z-20 w-[240px] h-[110px] bg-card-bg backdrop-blur-2xl border border-card-border rounded-[24px] p-4 flex flex-col gap-3 shadow-[0_12px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_12px_32px_rgba(0,0,0,0.4)] transition-all duration-500 hover:-translate-y-1">
+        <div className="absolute top-[30px] right-[-10px] md:right-[10px] z-20 w-[240px] h-[110px] bg-card-bg border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-300 hover:-translate-y-1">
           <div className="flex gap-1.5 mb-1">
-            <div className="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/10"></div>
-            <div className="w-3 h-3 rounded-full bg-[#FFBD2E] border border-black/10"></div>
-            <div className="w-3 h-3 rounded-full bg-[#27C93F] border border-black/10"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
           </div>
           <div className="font-semibold text-text-primary text-[14px] tracking-tight">Login</div>
           <div className="flex flex-col gap-2 mt-1">
@@ -59,14 +59,15 @@ const HeroRight: React.FC = () => {
         </div>
 
         {/* Floating Password Length Widget (Bottom Left) */}
-        <div className="absolute bottom-[30px] left-[-20px] md:left-[-10px] z-20 w-[260px] h-[95px] bg-card-bg backdrop-blur-2xl border border-card-border rounded-[24px] p-4.5 flex flex-col justify-center gap-3.5 shadow-[0_12px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_12px_32px_rgba(0,0,0,0.4)] transition-all duration-500 hover:-translate-y-1">
-          <div className="flex justify-between items-center px-1">
-            <span className="font-semibold text-text-primary text-[14px] tracking-tight">Length</span>
-            <span className="font-semibold text-text-primary bg-icon-bg/80 backdrop-blur-md px-2.5 py-0.5 rounded-md border border-card-border/50 text-[13px] transition-colors duration-500 shadow-sm">10</span>
+        <div className="absolute bottom-[30px] left-[-20px] md:left-[-10px] z-20 w-[260px] h-[95px] bg-card-bg border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-300 hover:-translate-y-1">
+          <div className="flex justify-between items-center">
+            <span className="font-bold text-text-primary text-[14px]">Length</span>
+            <div className="bg-icon-bg border-[2px] border-card-border rounded-lg px-3 py-1 flex items-center justify-center shadow-sm">
+              <span className="font-bold text-text-primary text-[14px]">10</span>
+            </div>
           </div>
-          <div className="relative w-full h-1.5 bg-text-secondary/20 rounded-full mx-1">
-            <div className="absolute top-0 left-0 h-full w-[40%] bg-brand-green-slider rounded-l-full shadow-[0_0_8px_rgba(126,217,87,0.5)]"></div>
-            <div className="absolute top-1/2 left-[40%] w-5 h-5 bg-white border border-black/10 rounded-full -translate-y-1/2 -translate-x-1/2 shadow-[0_2px_4px_rgba(0,0,0,0.2)] cursor-pointer transition-colors duration-300"></div>
+          <div className="relative w-full h-3 bg-card-border/10 rounded-full border border-card-border/20 overflow-hidden">
+            <div className="absolute top-0 left-0 h-full w-[40%] bg-brand-green-slider rounded-r-full border-r border-card-border/30"></div>
           </div>
         </div>
 

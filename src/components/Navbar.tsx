@@ -30,15 +30,12 @@ const Navbar: React.FC = () => {
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
-        <a href="#features" className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors">
+        <span className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
           Features
-        </a>
-        <a href="#who-are-we" className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors">
+        </span>
+        <span className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
           Who are we
-        </a>
-        <a href="#resources" className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors">
-          Resources
-        </a>
+        </span>
       </div>
 
       <div className="flex-1 flex items-center justify-end gap-6">
