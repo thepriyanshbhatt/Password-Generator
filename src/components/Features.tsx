@@ -11,7 +11,7 @@ const Features: React.FC = () => {
     {
       icon: <UserX className="w-6 h-6 text-brand-green-slider" />,
       title: "No Sign Up",
-      description: "Start using MyPass instantly. We don't require an account or email to generate secure passwords."
+      description: "Start using Vaultr instantly. We don't require an account or email to generate secure passwords."
     },
     {
       icon: <Globe className="w-6 h-6 text-brand-green-slider" />,
@@ -37,7 +37,7 @@ const Features: React.FC = () => {
             Everything you need. <span className="text-zinc-500">Nothing you don't.</span>
           </h2>
           <p className="text-[20px] font-medium text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-            MyPass is built with privacy and simplicity as the core principles. 
+            Vaultr is built with privacy and simplicity as the core principles. 
             Experience the most secure way to manage your digital life.
           </p>
         </div>
