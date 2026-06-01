@@ -21,7 +21,7 @@ const HeroRight: React.FC = () => {
       <div className="relative w-full max-w-[600px] h-[500px] flex items-center justify-center">
         
         {/* Main Password Card */}
-        <div className="relative z-10 w-[420px] h-[290px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
+        <div className="relative z-10 w-[380px] h-[350px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
           {/* Header */}
           <div className="flex justify-between items-center">
             <h2 className="font-extrabold text-[32px] text-text-primary tracking-tight">Google</h2>
@@ -32,10 +32,10 @@ const HeroRight: React.FC = () => {
           </div>
 
           {/* Password Display */}
-          <div className="flex flex-col gap-1.5 my-4">
-            <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-3 shadow-sm transition-colors duration-500 group hover:shadow-md cursor-pointer">
-              <span className="text-[38px] md:text-[42px] font-extrabold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
-              <button className="text-text-secondary hover:text-text-primary transition-colors p-2 bg-text-secondary/5 rounded-full group-hover:bg-text-secondary/10">
+          <div className="flex flex-col gap-2 my-4">
+            <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-4 shadow-sm transition-colors duration-500 group hover:shadow-md cursor-pointer">
+              <span className="text-[32px] md:text-[36px] font-extrabold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
+              <button className="text-text-secondary hover:text-text-primary transition-colors p-2.5 bg-text-secondary/5 rounded-full group-hover:bg-text-secondary/10">
                 <Copy size={20} />
               </button>
             </div>
@@ -49,7 +49,7 @@ const HeroRight: React.FC = () => {
         </div>
 
         {/* Floating Login Widget (Top Right) */}
-        <div className="absolute top-[30px] right-[-10px] md:right-[10px] z-20 w-[240px] h-[110px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div className="absolute top-[30px] right-[-20px] md:right-[-30px] z-20 w-[220px] h-[110px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-300 hover:-translate-y-1">
           <div className="flex gap-1.5 mb-1">
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
@@ -63,7 +63,7 @@ const HeroRight: React.FC = () => {
         </div>
 
         {/* Floating Password Length Widget (Bottom Left) */}
-        <div className="absolute bottom-[30px] left-[-20px] md:left-[-10px] z-20 w-[260px] h-[95px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div className="absolute bottom-[30px] left-[-20px] md:left-[-30px] z-20 w-[240px] h-[95px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-300 hover:-translate-y-1">
           <div className="flex justify-between items-center">
             <span className="font-extrabold text-text-primary text-[16px]">Length</span>
             <div className="bg-icon-bg border-[2px] border-card-border rounded-lg px-3 py-1 flex items-center justify-center shadow-sm">
