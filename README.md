@@ -4,7 +4,7 @@
 
 # 🛡️ IntelliKey
 
-**The Ultimate, Privacy-Focused Password Generator Swiss-Army Knife**
+**Advanced, Client-Side Password Management for the Modern Web**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-7ED957?style=for-the-badge&logo=vercel&logoColor=black)](https://intellikey.vercel.app/)
 
@@ -12,11 +12,11 @@
 
 <br/>
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+<a href="https://react.dev/"><img src="https://skillicons.dev/icons?i=react" alt="React" /></a>
+<a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" /></a>
+<a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" /></a>
+<a href="https://vitejs.dev/"><img src="https://skillicons.dev/icons?i=vite" alt="Vite" /></a>
+<a href="https://vercel.com/"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" /></a>
 
 </div>
 
@@ -84,7 +84,7 @@ To run IntelliKey locally on your machine:
 
 ## 🎨 Design Philosophy
 
-IntelliKey was designed under the philosophy that security tools do not need to be boring. By dropping generic "social proof" (like fake star reviews) and replacing them with confident, technical architectural badges, the UI commands trust. The aggressive use of the signature green against deep, inky blacks creates a stark, highly legible contrast that feels immediately modern, premium, and inherently secure.
+IntelliKey was designed under the philosophy that security tools do not need to be boring. By focusing on technical transparency and highly optimized modern design patterns, the UI inherently commands trust. The aggressive use of the signature green against deep, inky blacks creates a stark, highly legible contrast that feels immediately modern, premium, and secure.
 
 ---
 
@@ -94,23 +94,16 @@ IntelliKey was designed under the philosophy that security tools do not need to 
 
 I'd love to hear your feedback or discuss potential collaborations!
 
-<a href="https://github.com/thepriyanshbhatt">
-  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-<a href="https://linkedin.com/in/thepriyanshbhatt">
-  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://twitter.com/itspriyanshdev">
-  <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" />
-</a>
-<a href="mailto:priyanshbhatt.dev@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-</a>
+<a href="https://github.com/thepriyanshbhatt"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></a>
+<a href="https://linkedin.com/in/thepriyanshbhatt"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" /></a>
+<a href="https://twitter.com/itspriyanshdev"><img src="https://skillicons.dev/icons?i=twitter" alt="Twitter" /></a>
+<a href="mailto:priyanshbhatt.dev@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" /></a>
 
 <br/>
+<hr/>
 <br/>
 
-Made with <span style="color: #ef4444;">❤</span> by <b>Priyansh Bhatt</b>
+Built with <span style="color: #ef4444;">❤</span> by <b>Priyansh Bhatt</b>
 <br/>
 <a href="https://priyansh.framer.ai">View Portfolio</a>
 
