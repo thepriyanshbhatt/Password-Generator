@@ -21,7 +21,7 @@ const HeroRight: React.FC = () => {
       <div className="relative w-full max-w-[600px] h-[500px] flex items-center justify-center">
         
         {/* Main Password Card */}
-        <div className="relative z-10 w-[380px] h-[350px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
+        <div className="relative z-10 w-[380px] h-[220px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
           {/* Header */}
           <div className="flex justify-between items-center">
             <h2 className="font-extrabold text-[32px] text-text-primary tracking-tight">Google</h2>
@@ -41,11 +41,6 @@ const HeroRight: React.FC = () => {
             </div>
             <div className="text-text-secondary text-[15px] pl-3 font-semibold opacity-80 tracking-tight">user@mypass.com</div>
           </div>
-
-          {/* Generate Button */}
-          <button className="w-full bg-btn-bg text-btn-text h-[54px] rounded-[18px] font-bold text-[18px] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-md">
-            Generate New
-          </button>
         </div>
 
         {/* Floating Login Widget (Top Right) */}
