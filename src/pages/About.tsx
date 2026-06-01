@@ -19,12 +19,12 @@ const About: React.FC = () => {
           
           {/* Left Side - Image */}
           <div className="relative group mx-auto md:mx-0 w-full max-w-[400px]">
-            <div className="absolute inset-0 bg-brand-green-slider blur-[100px] opacity-10 dark:opacity-20 rounded-full"></div>
-            <div className="relative rounded-[32px] overflow-hidden bg-zinc-100 dark:bg-zinc-900 aspect-[4/5] shadow-xl border border-zinc-200 dark:border-white/10">
+            <div className="absolute -inset-4 bg-brand-green-slider blur-[100px] opacity-20 dark:opacity-30 rounded-full animate-pulse transition-opacity duration-1000 group-hover:opacity-40"></div>
+            <div className="relative rounded-[32px] overflow-hidden bg-zinc-100 dark:bg-zinc-900 aspect-[4/5] shadow-[0_0_40px_rgba(126,217,87,0.15)] dark:shadow-[0_0_60px_rgba(126,217,87,0.2)] border-2 border-brand-green-slider/30 dark:border-brand-green-slider/20 group-hover:border-brand-green-slider/60 transition-all duration-500">
               <img 
                 src="/priyansh.jpg" 
                 alt="Priyansh Bhatt" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   // Fallback if image doesn't exist yet
                   const target = e.target as HTMLImageElement;
@@ -35,8 +35,8 @@ const About: React.FC = () => {
               />
               
               {/* Badge overlay */}
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black text-white text-[11px] font-bold tracking-widest uppercase px-6 py-2.5 rounded-full shadow-lg border border-white/10 whitespace-nowrap">
-                Founder & Creator
+              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/90 backdrop-blur-md text-white text-[11px] font-bold tracking-widest uppercase px-6 py-2.5 rounded-full shadow-[0_0_30px_rgba(126,217,87,0.3)] border border-brand-green-slider/50 whitespace-nowrap">
+                <span className="drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Founder & Creator</span>
               </div>
             </div>
           </div>
