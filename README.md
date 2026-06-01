@@ -28,7 +28,7 @@ Unlike traditional password managers, IntelliKey generates passwords directly in
 
 ---
 
-## ⚡ Tech Stack & Architecture
+##  Tech Stack & Architecture
 
 This project was engineered from the ground up to be lightweight, incredibly fast, and visually striking.
 
@@ -41,7 +41,7 @@ This project was engineered from the ground up to be lightweight, incredibly fas
 
 ---
 
-## 🧩 Core Components & Feature Breakdown
+##  Core Components & Feature Breakdown
 
 ### 1. The Core Engine
 This is the heart of IntelliKey. 
@@ -60,7 +60,7 @@ This is the heart of IntelliKey.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 To run IntelliKey locally on your machine:
 
@@ -82,7 +82,7 @@ To run IntelliKey locally on your machine:
 
 ---
 
-## 🎨 Design Philosophy
+##  Design Philosophy
 
 IntelliKey was designed under the philosophy that security tools do not need to be boring. By focusing on technical transparency and highly optimized modern design patterns, the UI inherently commands trust. The aggressive use of the signature green against deep, inky blacks creates a stark, highly legible contrast that feels immediately modern, premium, and secure.
 
@@ -90,7 +90,7 @@ IntelliKey was designed under the philosophy that security tools do not need to 
 
 <div align="center">
 
-## 📇 Connect with Me
+##  Connect with Me
 
 I'd love to hear your feedback or discuss potential collaborations!
 
