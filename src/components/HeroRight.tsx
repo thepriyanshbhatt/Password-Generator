@@ -33,18 +33,18 @@ const HeroRight: React.FC = () => {
 
           {/* Password Display */}
           <div className="flex flex-col gap-2 my-4">
-            <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-4 shadow-sm transition-colors duration-500 group hover:shadow-md cursor-pointer">
+            <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-4 shadow-sm transition-colors duration-500">
               <span className="text-[32px] md:text-[36px] font-extrabold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
-              <button className="text-text-secondary hover:text-text-primary transition-colors p-2.5 bg-text-secondary/5 rounded-full group-hover:bg-text-secondary/10">
+              <div className="text-text-secondary p-2.5 bg-text-secondary/5 rounded-full">
                 <Copy size={20} />
-              </button>
+              </div>
             </div>
             <div className="text-text-secondary text-[15px] pl-3 font-semibold opacity-80 tracking-tight">user@mypass.com</div>
           </div>
         </div>
 
         {/* Floating Login Widget (Top Right) */}
-        <div className="absolute top-[30px] right-[-20px] md:right-[-30px] z-20 w-[220px] h-[110px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div className="absolute top-[30px] right-[-20px] md:right-[-30px] z-20 w-[220px] h-[110px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-500">
           <div className="flex gap-1.5 mb-1">
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
@@ -58,7 +58,7 @@ const HeroRight: React.FC = () => {
         </div>
 
         {/* Floating Password Length Widget (Bottom Left) */}
-        <div className="absolute bottom-[30px] left-[-20px] md:left-[-30px] z-20 w-[240px] h-[95px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-300 hover:-translate-y-1">
+        <div className="absolute bottom-[30px] left-[-20px] md:left-[-30px] z-20 w-[240px] h-[95px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-500">
           <div className="flex justify-between items-center">
             <span className="font-extrabold text-text-primary text-[16px]">Length</span>
             <div className="bg-icon-bg border-[2px] border-card-border rounded-lg px-3 py-1 flex items-center justify-center shadow-sm">
