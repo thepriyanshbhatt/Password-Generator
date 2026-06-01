@@ -103,11 +103,11 @@ const HeroRight: React.FC = () => {
           
           {/* Header & Strength */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <h2 className="font-extrabold text-[24px] text-text-primary tracking-tight">Generator</h2>
+            <h2 className="font-extrabold text-[24px] text-text-primary tracking-tight">IntelliKey Generator</h2>
             <div className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full border shadow-sm transition-colors duration-500 ${isWeak ? 'bg-red-500/10 border-red-500/50 text-red-500 dark:text-red-400' : 'bg-icon-bg/80 border-card-border/50 text-brand-green-slider'}`}>
               {isWeak ? <ShieldAlert size={16} /> : <ShieldCheck size={16} />}
               <span className="text-[13px] font-bold tracking-tight">
-                {isWeak ? 'IMMEDIATE FAIL' : 'EXPANDED UNICODE'}
+                {isWeak ? 'IMMEDIATE FAIL' : '100% SECURE'}
               </span>
             </div>
           </div>
