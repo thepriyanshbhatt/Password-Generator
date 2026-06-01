@@ -4,11 +4,8 @@ import { ArrowRight } from 'lucide-react';
 const HeroLeft: React.FC = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center p-8 md:p-[80px] relative z-10 transition-colors duration-500">
-      {/* Decorative Dash */}
-      <div className="absolute top-12 left-8 md:top-24 md:left-[80px] w-10 h-1 bg-text-primary rounded-full opacity-80"></div>
-
       <div className="max-w-[520px] mx-auto md:mx-0 mt-8 md:mt-0 relative z-10">
-        <div className="inline-block bg-brand-green-accent text-black font-semibold px-4 py-1.5 rounded-full text-sm mb-8 shadow-sm tracking-wide">
+        <div className="inline-block bg-brand-green-accent text-black font-bold px-5 py-2 rounded-full text-[15px] mb-8 shadow-sm tracking-wide">
           #1 Password App
         </div>
 
