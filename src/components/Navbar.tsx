@@ -31,11 +31,11 @@ const Navbar: React.FC = () => {
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
-        <span className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
+        <span className="text-[16px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
           Features
         </span>
-        <span className="text-[15px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
-          Who are we
+        <span className="text-[16px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
+          About
         </span>
       </div>
 
@@ -46,9 +46,6 @@ const Navbar: React.FC = () => {
           aria-label="Toggle dark mode"
         >
           {isDark ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
-        <button className="bg-btn-bg text-btn-text w-[160px] h-[44px] rounded-full font-medium transition-all duration-300 flex items-center justify-center text-[15px] hover:scale-105 active:scale-95 shadow-[0_8px_16px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_16px_rgba(255,255,255,0.05)]">
-          Get Started
         </button>
       </div>
       </nav>
