@@ -20,28 +20,7 @@ const HeroRight: React.FC = () => {
       {/* Main Illustration Container */}
       <div className="relative w-full max-w-[600px] h-[500px] flex items-center justify-center">
         
-        {/* Main Password Card */}
-        <div className="relative z-10 w-[420px] h-[290px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
-          {/* Header */}
-          <div className="flex justify-between items-center">
-            <h2 className="font-extrabold text-[32px] text-text-primary tracking-tight">Google</h2>
-            <div className="flex items-center gap-2 bg-icon-bg/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-card-border/50 shadow-sm transition-colors duration-500">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-              <span className="text-[14px] font-bold text-text-secondary tracking-tight">58 sec left</span>
-            </div>
-          </div>
-
-          {/* Password Display */}
-          <div className="flex flex-col gap-2 my-4">
-            <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-4 shadow-sm transition-colors duration-500">
-              <span className="text-[32px] md:text-[36px] font-extrabold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
-              <div className="text-text-secondary p-2.5 bg-text-secondary/5 rounded-full">
-                <Copy size={20} />
-              </div>
-            </div>
-            <div className="text-text-secondary text-[15px] pl-3 font-semibold opacity-80 tracking-tight">user@mypass.com</div>
-          </div>
-        </div>
+        {/* Removed Main Password Card per user request */}
 
       </div>
     </div>
