@@ -26,8 +26,12 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-24 px-8 border-t border-card-border/20 bg-brand-light transition-colors duration-500 relative z-10">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full py-24 px-8 bg-gradient-to-b from-brand-light to-white dark:from-[#000000] dark:to-[#0A0A0A] transition-colors duration-500 relative z-10 overflow-hidden">
+      {/* Creative Merging Glowing Border */}
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-green to-transparent opacity-80"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-green rounded-full blur-[120px] opacity-30 dark:opacity-20 pointer-events-none -mt-[150px]"></div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-[40px] font-bold text-text-primary tracking-tighter mb-4">
             Everything you need. <span className="text-text-secondary">Nothing you don't.</span>
