@@ -100,11 +100,12 @@ I'd love to hear your feedback or discuss potential collaborations!
 <a href="mailto:priyanshbhatt.dev@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" /></a>
 
 <br/>
+<br/>
+<a href="https://priyansh.framer.ai">View Portfolio</a>
+<br/>
 <hr/>
 <br/>
 
 Built with <span style="color: #ef4444;">❤</span> by <b>Priyansh Bhatt</b>
-<br/>
-<a href="https://priyansh.framer.ai">View Portfolio</a>
 
 </div>
