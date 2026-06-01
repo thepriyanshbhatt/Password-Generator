@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
-      <nav className="h-[72px] max-w-6xl w-full bg-nav-bg/90 backdrop-blur-xl border border-card-border/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-colors duration-500 relative">
+      <nav className="h-[72px] max-w-6xl w-full bg-white/20 dark:bg-black/20 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] transition-all duration-500 relative">
         <div className="flex-1 flex items-center justify-start">
         <a href="/" className="text-[28px] font-bold text-text-primary tracking-tight">
           MyPass
