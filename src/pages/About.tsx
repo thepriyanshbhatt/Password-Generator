@@ -43,7 +43,7 @@ const About: React.FC = () => {
 
           {/* Right Side - Content */}
           <div className="flex flex-col items-start">
-            <div className="inline-block bg-zinc-100/50 dark:bg-white/5 border border-brand-green-slider/40 dark:border-brand-green-slider/30 text-black dark:text-black font-bold uppercase tracking-widest px-4 py-1.5 rounded-full text-[11px] mb-8 shadow-[0_0_20px_rgba(126,217,87,0.25)] relative overflow-hidden group">
+            <div className="inline-block bg-zinc-100/50 dark:bg-white/5 border border-brand-green-slider/40 dark:border-brand-green-slider/30 text-black dark:text-white font-bold uppercase tracking-widest px-4 py-1.5 rounded-full text-[11px] mb-8 shadow-[0_0_20px_rgba(126,217,87,0.25)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-brand-green-slider/10 blur-md rounded-full"></div>
               <span className="relative z-10 drop-shadow-[0_0_8px_rgba(126,217,87,0.6)]">About the Builder</span>
             </div>
