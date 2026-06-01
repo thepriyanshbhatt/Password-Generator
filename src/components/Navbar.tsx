@@ -21,6 +21,35 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const scrollToFeatures = () => {
+    const target = document.getElementById('features');
+    if (!target) return;
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 800; // faster, non-bouncy scroll
+    let start: number | null = null;
+
+    // easeOutQuart for a fast, smooth swipe effect without bouncing
+    const easeOutQuart = (t: number) => {
+      return 1 - Math.pow(1 - t, 4);
+    };
+
+    const step = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percentage = Math.min(progress / duration, 1);
+      
+      window.scrollTo(0, startPosition + distance * easeOutQuart(percentage));
+      
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    
+    window.requestAnimationFrame(step);
+  };
+
   return (
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
       <nav className="h-[72px] max-w-4xl w-full bg-white/70 dark:bg-[#1A1A1A]/80 backdrop-blur-2xl border border-white/50 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-all duration-500 relative">
@@ -32,12 +61,12 @@ const Navbar: React.FC = () => {
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
-        <span className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-default">
+        <button onClick={scrollToFeatures} className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors">
           Features
-        </span>
-        <span className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-default">
+        </button>
+        <button className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-default">
           About
-        </span>
+        </button>
       </div>
 
       <div className="flex-1 flex items-center justify-end gap-6">

@@ -5,16 +5,23 @@ import HeroRight from './components/HeroRight';
 
 import Features from './components/Features';
 
+import { motion } from 'framer-motion';
+
 function App() {
   return (
-    <div className="flex flex-col min-h-screen relative bg-brand-light transition-colors duration-500 overflow-hidden">
+    <motion.div 
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+      className="flex flex-col min-h-screen relative bg-brand-light transition-colors duration-500 overflow-hidden"
+    >
       <Navbar />
       <main className="flex-1 grid grid-cols-1 md:grid-cols-2 min-h-screen">
         <HeroLeft />
         <HeroRight />
       </main>
       <Features />
-    </div>
+    </motion.div>
   );
 }
 

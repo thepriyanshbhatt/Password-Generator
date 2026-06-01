@@ -26,7 +26,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-24 px-8 bg-white dark:bg-[#0A0A0A] transition-colors duration-500 relative z-10 overflow-hidden">
+    <section id="features" className="w-full py-24 px-8 bg-white dark:bg-[#0A0A0A] transition-colors duration-500 relative z-10 overflow-hidden">
       {/* Creative Merging Glowing Border */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-green-slider to-transparent opacity-80"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-green-slider rounded-full blur-[140px] opacity-10 dark:opacity-20 pointer-events-none -mt-[150px]"></div>
