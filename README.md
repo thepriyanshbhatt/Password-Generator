@@ -1,6 +1,29 @@
+<div align="center">
+
+<img src="./public/intellikey-logo.png" alt="IntelliKey Logo" width="100"/>
+
 # 🛡️ IntelliKey
 
-> **A hyper-premium, zero-knowledge password generator built with modern web technologies, focused on absolute privacy and a flawless user experience.**
+**The Ultimate, Privacy-Focused Password Generator Swiss-Army Knife**
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-7ED957?style=for-the-badge&logo=vercel&logoColor=black)](https://intellikey.vercel.app/)
+
+[View Demo](https://intellikey.vercel.app/) · [Report Bug](https://github.com/thepriyanshbhatt/Password-Generator/issues) · [Request Feature](https://github.com/thepriyanshbhatt/Password-Generator/issues)
+
+<br/>
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
+
+</div>
+
+<br/>
 
 IntelliKey (formerly known as Vaultr) is a client-side password management tool designed for the modern web. Built by **Priyansh Bhatt**, it prioritizes a sleek, minimalist "Bento-box" aesthetic, lightning-fast animations, and robust client-side security. 
 
@@ -23,32 +46,20 @@ This project was engineered from the ground up to be lightweight, incredibly fas
 
 ## 🧩 Core Components & Feature Breakdown
 
-### 1. The Core Engine (`HeroLeft.tsx`)
+### 1. The Core Engine
 This is the heart of IntelliKey. 
 - **Client-Side Entropy:** Passwords are mathematically generated locally on the user's machine. 
-- **Dynamic Controls:** Features a custom-styled range slider to dictate password length (up to 32 characters) and custom interactive checkboxes for granular control over character sets (Uppercase, Lowercase, Numbers, Symbols).
+- **Dynamic Controls:** Features a custom-styled range slider to dictate password length (up to 32 characters) and custom interactive checkboxes for granular control over character sets.
 - **Technical Trust Signals:** Prominently displays "Zero-Knowledge" and "Crypto API" badges to assure technical users of the underlying security architecture.
 
-### 2. Ambient Aesthetic (`HeroRight.tsx` & Backgrounds)
+### 2. Ambient Aesthetic
 - **Glassmorphism & Glows:** The application relies heavily on translucent backgrounds (`backdrop-blur-2xl`) and carefully positioned, highly blurred gradient orbs to create an ambient, glowing "premium SaaS" environment.
-- **Dark Mode Integration:** The entire UI is built with a first-class dark mode (`dark:bg-[#0A0A0A]`) that smoothly transitions colors over a 500ms duration.
+- **Dark Mode Integration:** The entire UI is built with a first-class dark mode (`dark:bg-[#0A0A0A]`) that smoothly transitions colors.
 
-### 3. Intelligent Navigation (`Navbar.tsx`)
+### 3. Intelligent Navigation
 - **Floating Pill Design:** A sticky, translucent navigation bar constrained to a `max-w-4xl` pill shape.
-- **Custom Smooth Scroll:** Instead of relying on native browser CSS which can feel clunky, the Navbar implements a highly optimized, `requestAnimationFrame`-based scroll function utilizing an `easeOutQuart` mathematical curve. This allows for a lightning-fast, zero-wobble swipe down to the features section.
-- **Context-Aware Routing:** The logo and "Home" links intelligently detect the user's current route. If on the homepage, they act as smooth scroll-to-top triggers. If on the About page, they act as standard React Router navigation links.
-
-### 4. Bento-Box About Page (`pages/About.tsx`)
-- **Creator Profile:** A dedicated route (`/about`) styled in a modern "Bento-box" layout featuring a high-resolution portrait of the founder, Priyansh Bhatt.
-- **Direct Integrations:** Features a "View Portfolio" button securely opening `https://priyansh.framer.ai` (`target="_blank" rel="noopener noreferrer"`) and a "Get in Touch" button utilizing the native `mailto:priyanshbhatt.dev@gmail.com` protocol.
-
-### 5. Feature Grid (`Features.tsx`)
-- A visually striking 4-column grid outlining the core tenets of IntelliKey: 
-  - **100% Free**
-  - **No Sign Up**
-  - **Use Anywhere**
-  - **Zero Storage**
-- Features subtle hover micro-interactions (`hover:-translate-y-1`) and custom glowing drop-shadows.
+- **Custom Smooth Scroll:** The Navbar implements a highly optimized, `requestAnimationFrame`-based scroll function utilizing an `easeOutQuart` mathematical curve.
+- **Context-Aware Routing:** The logo and "Home" links intelligently detect the user's current route to perform smooth scrolling or standard routing.
 
 ---
 
@@ -72,21 +83,38 @@ To run IntelliKey locally on your machine:
    npm run dev
    ```
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
-
 ---
 
 ## 🎨 Design Philosophy
 
-IntelliKey was designed under the philosophy that security tools do not need to be boring. 
-By dropping generic "social proof" (like fake star reviews) and replacing them with confident, technical architectural badges, the UI commands trust. The aggressive use of the `brand-green-slider` against deep, inky blacks (`#0A0A0A`) creates a stark, highly legible contrast that feels immediately modern, premium, and inherently secure.
+IntelliKey was designed under the philosophy that security tools do not need to be boring. By dropping generic "social proof" (like fake star reviews) and replacing them with confident, technical architectural badges, the UI commands trust. The aggressive use of the signature green against deep, inky blacks creates a stark, highly legible contrast that feels immediately modern, premium, and inherently secure.
 
 ---
 
 <div align="center">
-  <p>Made with <span style="color: #ef4444;">❤</span> by <b>Priyansh Bhatt</b></p>
-  <a href="https://priyansh.framer.ai">View Portfolio</a> | <a href="mailto:priyanshbhatt.dev@gmail.com">Get in Touch</a>
+
+## 📇 Connect with Me
+
+I'd love to hear your feedback or discuss potential collaborations!
+
+<a href="https://github.com/thepriyanshbhatt">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+<a href="https://linkedin.com/in/thepriyanshbhatt">
+  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://twitter.com/thepriyanshbhatt">
+  <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" />
+</a>
+<a href="mailto:priyanshbhatt.dev@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+</a>
+
+<br/>
+<br/>
+
+Made with <span style="color: #ef4444;">❤</span> by <b>Priyansh Bhatt</b>
+<br/>
+<a href="https://priyansh.framer.ai">View Portfolio</a>
+
 </div>
