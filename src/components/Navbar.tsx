@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
       <nav className="h-[72px] max-w-4xl w-full bg-white/70 dark:bg-[#1A1A1A]/80 backdrop-blur-2xl border border-white/50 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-all duration-500 relative">
         <div className="flex-1 flex items-center justify-start">
-        <a href="/" className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight">
-          <img src="/vaultr-logo.png" alt="Vaultr Logo" className="w-14 h-14 object-contain drop-shadow-sm" />
+        <a href="/" className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight leading-none">
+          <img src="/vaultr-logo.png" alt="Vaultr Logo" className="w-[32px] h-[32px] object-contain drop-shadow-sm" />
           Vaultr
         </a>
       </div>
