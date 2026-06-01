@@ -24,26 +24,26 @@ const HeroRight: React.FC = () => {
         <div className="relative z-10 w-[420px] h-[290px] bg-card-bg border-[3px] border-card-border rounded-[24px] p-7 flex flex-col justify-between shadow-sm transition-all duration-300">
           {/* Header */}
           <div className="flex justify-between items-center">
-            <h2 className="font-bold text-[28px] text-text-primary tracking-tight">Google</h2>
+            <h2 className="font-extrabold text-[32px] text-text-primary tracking-tight">Google</h2>
             <div className="flex items-center gap-2 bg-icon-bg/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-card-border/50 shadow-sm transition-colors duration-500">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-              <span className="text-[13px] font-semibold text-text-secondary tracking-tight">58 sec left</span>
+              <span className="text-[14px] font-bold text-text-secondary tracking-tight">58 sec left</span>
             </div>
           </div>
 
           {/* Password Display */}
           <div className="flex flex-col gap-1.5 my-4">
             <div className="flex justify-between items-center bg-icon-bg/80 backdrop-blur-md border border-card-border/50 rounded-[20px] px-5 py-3 shadow-sm transition-colors duration-500 group hover:shadow-md cursor-pointer">
-              <span className="text-[42px] md:text-[50px] font-bold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
+              <span className="text-[48px] md:text-[56px] font-extrabold tracking-tight text-text-primary font-mono">wV*VrtYuin</span>
               <button className="text-text-secondary hover:text-text-primary transition-colors p-2 bg-text-secondary/5 rounded-full group-hover:bg-text-secondary/10">
                 <Copy size={20} />
               </button>
             </div>
-            <div className="text-text-secondary text-[13px] pl-3 font-medium opacity-80 tracking-tight">user@mypass.com</div>
+            <div className="text-text-secondary text-[15px] pl-3 font-semibold opacity-80 tracking-tight">user@mypass.com</div>
           </div>
 
           {/* Generate Button */}
-          <button className="w-full bg-btn-bg text-btn-text h-[54px] rounded-[18px] font-medium text-[16px] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-md">
+          <button className="w-full bg-btn-bg text-btn-text h-[54px] rounded-[18px] font-bold text-[18px] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-md">
             Generate New
           </button>
         </div>
@@ -55,7 +55,7 @@ const HeroRight: React.FC = () => {
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
             <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
           </div>
-          <div className="font-semibold text-text-primary text-[14px] tracking-tight">Login</div>
+          <div className="font-bold text-text-primary text-[16px] tracking-tight">Login</div>
           <div className="flex flex-col gap-2 mt-1">
             <div className="w-full h-1.5 bg-text-secondary/20 rounded-full"></div>
             <div className="w-2/3 h-1.5 bg-text-secondary/20 rounded-full"></div>
@@ -65,9 +65,9 @@ const HeroRight: React.FC = () => {
         {/* Floating Password Length Widget (Bottom Left) */}
         <div className="absolute bottom-[30px] left-[-20px] md:left-[-10px] z-20 w-[260px] h-[95px] bg-card-bg border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-300 hover:-translate-y-1">
           <div className="flex justify-between items-center">
-            <span className="font-bold text-text-primary text-[14px]">Length</span>
+            <span className="font-extrabold text-text-primary text-[16px]">Length</span>
             <div className="bg-icon-bg border-[2px] border-card-border rounded-lg px-3 py-1 flex items-center justify-center shadow-sm">
-              <span className="font-bold text-text-primary text-[14px]">10</span>
+              <span className="font-extrabold text-text-primary text-[18px]">10</span>
             </div>
           </div>
           <div className="relative w-full h-3 bg-card-border/10 rounded-full border border-card-border/20 overflow-hidden">

@@ -33,10 +33,10 @@ const Features: React.FC = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-[40px] font-bold text-zinc-900 dark:text-white tracking-tighter mb-4">
+          <h2 className="text-[48px] md:text-[56px] font-extrabold text-zinc-900 dark:text-white tracking-tighter mb-4">
             Everything you need. <span className="text-zinc-500">Nothing you don't.</span>
           </h2>
-          <p className="text-[18px] text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-[20px] font-medium text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
             MyPass is built with privacy and simplicity as the core principles. 
             Experience the most secure way to manage your digital life.
           </p>
@@ -51,10 +51,10 @@ const Features: React.FC = () => {
               <div className="w-12 h-12 rounded-full bg-white dark:bg-white/5 flex items-center justify-center mb-6 border border-zinc-200 dark:border-white/10 shadow-sm">
                 {feature.icon}
               </div>
-              <h3 className="text-[18px] font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
+              <h3 className="text-[22px] font-extrabold text-zinc-900 dark:text-white mb-3 tracking-tight">
                 {feature.title}
               </h3>
-              <p className="text-[15px] text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              <p className="text-[16px] font-medium text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 {feature.description}
               </p>
             </div>

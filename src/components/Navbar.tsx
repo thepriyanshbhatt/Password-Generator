@@ -25,16 +25,16 @@ const Navbar: React.FC = () => {
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
       <nav className="h-[72px] max-w-6xl w-full bg-white/70 dark:bg-[#1A1A1A]/80 backdrop-blur-2xl border border-white/50 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-all duration-500 relative">
         <div className="flex-1 flex items-center justify-start">
-        <a href="/" className="text-[28px] font-bold text-text-primary tracking-tight">
+        <a href="/" className="text-[32px] font-extrabold text-text-primary tracking-tight">
           MyPass
         </a>
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
-        <span className="text-[16px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
+        <span className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-default">
           Features
         </span>
-        <span className="text-[16px] font-medium text-text-secondary hover:text-text-primary transition-colors cursor-default">
+        <span className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-default">
           About
         </span>
       </div>
