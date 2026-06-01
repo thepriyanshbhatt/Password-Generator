@@ -1,22 +1,53 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Poppins", sans-serif;
+:root {
+  --app-bg-left: #F4F0E3;
+  --app-bg-right: #BFE8B7;
+  --app-text-primary: #111111;
+  --app-text-secondary: #4A4A4A;
+  --app-card-bg: #F3F3F3;
+  --app-card-border: #1A1A1A;
+  --app-nav-bg: #FFFFFF;
+  --app-btn-bg: #000000;
+  --app-btn-text: #FFFFFF;
+  --app-icon-bg: #FFFFFF;
+}
 
-  --color-brand-light: #F4F0E3;
-  --color-brand-green: #BFE8B7;
+.dark {
+  --app-bg-left: #0A0A0A;
+  --app-bg-right: #111C16;
+  --app-text-primary: #F5F5F7;
+  --app-text-secondary: #98989D;
+  --app-card-bg: #1C1C1E;
+  --app-card-border: #2C2C2E;
+  --app-nav-bg: #0A0A0A;
+  --app-btn-bg: #FFFFFF;
+  --app-btn-text: #000000;
+  --app-icon-bg: #2C2C2E;
+}
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --color-brand-light: var(--app-bg-left);
+  --color-brand-green: var(--app-bg-right);
   --color-brand-green-accent: #B6F28A;
   --color-brand-green-slider: #7ED957;
 
-  --color-text-primary: #111111;
-  --color-text-secondary: #4A4A4A;
+  --color-text-primary: var(--app-text-primary);
+  --color-text-secondary: var(--app-text-secondary);
 
-  --color-card-bg: #F3F3F3;
-  --color-card-border: #1A1A1A;
+  --color-card-bg: var(--app-card-bg);
+  --color-card-border: var(--app-card-border);
+  
+  --color-nav-bg: var(--app-nav-bg);
+  --color-btn-bg: var(--app-btn-bg);
+  --color-btn-text: var(--app-btn-text);
+  --color-icon-bg: var(--app-icon-bg);
 }
 
 @layer base {
   body {
-    @apply font-sans text-text-primary bg-brand-light antialiased;
+    @apply font-sans text-text-primary bg-brand-light antialiased transition-colors duration-300;
   }
 }
