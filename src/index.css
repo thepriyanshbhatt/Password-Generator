@@ -3,31 +3,37 @@
 :root {
   --app-bg-left: #F4F0E3;
   --app-bg-right: #BFE8B7;
-  --app-text-primary: #111111;
-  --app-text-secondary: #4A4A4A;
-  --app-card-bg: #F3F3F3;
-  --app-card-border: #1A1A1A;
-  --app-nav-bg: #FFFFFF;
-  --app-btn-bg: #000000;
+  
+  --app-text-primary: #1D1D1F;
+  --app-text-secondary: #86868B;
+  
+  --app-card-bg: rgba(255, 255, 255, 0.65);
+  --app-card-border: rgba(255, 255, 255, 0.5);
+  
+  --app-nav-bg: rgba(255, 255, 255, 0.72);
+  --app-btn-bg: #1D1D1F;
   --app-btn-text: #FFFFFF;
   --app-icon-bg: #FFFFFF;
 }
 
 .dark {
-  --app-bg-left: #0A0A0A;
-  --app-bg-right: #111C16;
+  --app-bg-left: #000000;
+  --app-bg-right: #08110D;
+  
   --app-text-primary: #F5F5F7;
-  --app-text-secondary: #98989D;
-  --app-card-bg: #1C1C1E;
-  --app-card-border: #2C2C2E;
-  --app-nav-bg: #0A0A0A;
-  --app-btn-bg: #FFFFFF;
+  --app-text-secondary: #86868B;
+  
+  --app-card-bg: rgba(28, 28, 30, 0.65);
+  --app-card-border: rgba(255, 255, 255, 0.1);
+  
+  --app-nav-bg: rgba(0, 0, 0, 0.72);
+  --app-btn-bg: #F5F5F7;
   --app-btn-text: #000000;
-  --app-icon-bg: #2C2C2E;
+  --app-icon-bg: #1C1C1E;
 }
 
 @theme {
-  --font-sans: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --color-brand-light: var(--app-bg-left);
   --color-brand-green: var(--app-bg-right);
@@ -48,6 +54,6 @@
 
 @layer base {
   body {
-    @apply font-sans text-text-primary bg-brand-light antialiased transition-colors duration-300;
+    @apply font-sans text-text-primary bg-brand-light antialiased transition-colors duration-300 tracking-tight;
   }
 }
