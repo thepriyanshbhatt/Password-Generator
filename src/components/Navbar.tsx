@@ -22,8 +22,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="h-[80px] bg-nav-bg/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 flex items-center justify-between px-6 md:px-12 w-full shrink-0 transition-colors duration-500 z-50 relative">
-      <div className="flex-1 flex items-center justify-start">
+    <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
+      <nav className="h-[72px] max-w-6xl w-full bg-nav-bg/90 backdrop-blur-xl border border-card-border/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-colors duration-500 relative">
+        <div className="flex-1 flex items-center justify-start">
         <a href="/" className="text-[28px] font-bold text-text-primary tracking-tight">
           MyPass
         </a>
@@ -50,7 +51,8 @@ const Navbar: React.FC = () => {
           Get Started
         </button>
       </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
