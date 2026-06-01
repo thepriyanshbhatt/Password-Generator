@@ -10,7 +10,7 @@ const About: React.FC = () => {
       initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 400, damping: 30 }}
-      className="flex flex-col min-h-screen bg-white dark:bg-[#0A0A0A] transition-colors duration-500 overflow-x-hidden"
+      className="flex flex-col min-h-screen bg-brand-light transition-colors duration-500 overflow-x-hidden"
     >
       <Navbar />
       

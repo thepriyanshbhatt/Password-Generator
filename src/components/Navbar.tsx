@@ -74,6 +74,9 @@ const Navbar: React.FC = () => {
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
+        <Link to="/" className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
+          Home
+        </Link>
         <button onClick={scrollToFeatures} className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors">
           Features
         </button>
