@@ -43,33 +43,6 @@ const HeroRight: React.FC = () => {
           </div>
         </div>
 
-        {/* Floating Login Widget (Top Right) */}
-        <div className="absolute top-[30px] right-[-10px] md:right-[10px] z-20 w-[240px] h-[110px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-4 flex flex-col gap-3 shadow-md transition-all duration-500">
-          <div className="flex gap-1.5 mb-1">
-            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-text-secondary opacity-40"></div>
-          </div>
-          <div className="font-bold text-text-primary text-[16px] tracking-tight">Login</div>
-          <div className="flex flex-col gap-2 mt-1">
-            <div className="w-full h-1.5 bg-text-secondary/20 rounded-full"></div>
-            <div className="w-2/3 h-1.5 bg-text-secondary/20 rounded-full"></div>
-          </div>
-        </div>
-
-        {/* Floating Password Length Widget (Bottom Left) */}
-        <div className="absolute bottom-[30px] left-[10px] md:left-[20px] z-20 w-[260px] h-[95px] bg-card-bg backdrop-blur-2xl border-[3px] border-card-border rounded-[20px] p-5 flex flex-col justify-center gap-4 shadow-md transition-all duration-500">
-          <div className="flex justify-between items-center">
-            <span className="font-extrabold text-text-primary text-[16px]">Length</span>
-            <div className="bg-icon-bg border-[2px] border-card-border rounded-lg px-3 py-1 flex items-center justify-center shadow-sm">
-              <span className="font-extrabold text-text-primary text-[18px]">10</span>
-            </div>
-          </div>
-          <div className="relative w-full h-3 bg-card-border/10 rounded-full border border-card-border/20 overflow-hidden">
-            <div className="absolute top-0 left-0 h-full w-[40%] bg-brand-green-slider rounded-r-full border-r border-card-border/30"></div>
-          </div>
-        </div>
-
       </div>
     </div>
   );
