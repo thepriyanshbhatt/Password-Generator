@@ -63,18 +63,46 @@ const Navbar: React.FC = () => {
     window.requestAnimationFrame(step);
   };
 
+  const scrollToTop = (e: React.MouseEvent) => {
+    if (location.pathname === '/') {
+      e.preventDefault(); // Prevent React Router from doing nothing or jumping
+      const startPosition = window.scrollY;
+      const distance = -startPosition; // scroll to top (0)
+      const duration = 800;
+      let start: number | null = null;
+
+      const easeOutQuart = (t: number) => {
+        return 1 - Math.pow(1 - t, 4);
+      };
+
+      const step = (timestamp: number) => {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const percentage = Math.min(progress / duration, 1);
+        
+        window.scrollTo(0, startPosition + distance * easeOutQuart(percentage));
+        
+        if (progress < duration) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      
+      window.requestAnimationFrame(step);
+    }
+  };
+
   return (
     <div className="fixed top-4 md:top-6 z-50 w-full px-4 md:px-8 flex justify-center">
       <nav className="h-[72px] max-w-4xl w-full bg-white/70 dark:bg-[#1A1A1A]/80 backdrop-blur-2xl border border-white/50 dark:border-white/10 rounded-full flex items-center justify-between px-6 md:px-8 shadow-sm transition-all duration-500 relative">
         <div className="flex-1 flex items-center justify-start">
-        <Link to="/" className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight leading-none">
+        <Link to="/" onClick={scrollToTop} className="flex items-center gap-3 text-[32px] font-extrabold text-text-primary tracking-tight leading-none">
           <img src="/vaultr-logo.png" alt="Vaultr Logo" className="w-[32px] h-[32px] object-contain drop-shadow-sm" />
           Vaultr
         </Link>
       </div>
       
       <div className="hidden md:flex flex-1 items-center justify-center gap-[48px]">
-        <Link to="/" className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
+        <Link to="/" onClick={scrollToTop} className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
           Home
         </Link>
         <button onClick={scrollToFeatures} className="text-[17px] font-semibold text-text-secondary hover:text-text-primary transition-colors">
